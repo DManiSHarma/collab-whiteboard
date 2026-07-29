@@ -1,114 +1,131 @@
-# CollabBoard — Real-Time Collaboration Whiteboard
+<div align="center">
 
-A collaborative online whiteboard where multiple users can draw, add sticky notes, and chat in real time.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0F3D3E&height=230&section=header&text=Manish%20Sharma&fontSize=44&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Full%20Stack%20Developer%20%7C%20MERN%20%7C%20Real-Time%20Apps&descAlignY=55&descSize=17" width="100%"/>
 
-![Tech Stack](https://img.shields.io/badge/Next.js-14-black?logo=next.js) ![Socket.io](https://img.shields.io/badge/Socket.io-4-blue?logo=socket.io) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss) ![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0F3D3E&center=true&vCenter=true&width=650&lines=Full+Stack+Developer;MERN+%2B+Socket.io+Real-Time+Systems;Self-Employed+%2F+Entrepreneur;Building+CollabBoard+-+Live+Whiteboard+App" alt="Typing SVG" />
+</a>
 
-## ✨ Features
+<br/>
 
-- **🎨 Real-Time Drawing** — Freehand pen, shapes (rectangle, circle, line, arrow), eraser, with live sync
-- **📝 Sticky Notes** — Draggable, color-coded notes with real-time text editing
-- **💬 Live Chat** — Slide-out chat panel with typing indicators and unread badges
-- **👥 Multi-User Cursors** — See other users' cursors with name labels
-- **🏠 Room System** — Create/join rooms with shareable 6-character codes
-- **🔍 Zoom & Pan** — Infinite canvas with zoom (25%–300%) and pan support
-- **↩️ Undo/Redo** — Full undo/redo stack for drawing actions
+<img src="https://img.shields.io/badge/Open%20to%20Work-0F3D3E?style=for-the-badge&logo=handshake&logoColor=white" />
 
-## 🚀 Quick Start
+<br/><br/>
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
+<img src="https://komarev.com/ghpvc/?username=DManiSHarma&color=0F3D3E&style=flat-square&label=Profile+Views" />
+<img src="https://img.shields.io/github/followers/DManiSHarma?label=Followers&style=flat-square&color=0F3D3E" />
 
-### 1. Install & Start the Backend Server
+</div>
 
-```bash
-cd server
-npm install
-npm run dev
+<br/>
+
+## 🧑‍💻 Who I Am
+
+```typescript
+const manishSharma = {
+  title: "Full Stack Developer",
+  stack: ["MongoDB", "Express.js", "React", "Node.js", "Socket.io", "JavaScript"],
+  status: "Self-Employed / Entrepreneur",
+  openTo: "New opportunities & collaborations",
+  currentlyBuilding: "CollabBoard — a real-time collaborative whiteboard",
+  focus: "Real-time systems, full-stack architecture, clean UX",
+};
 ```
 
-The server starts on `http://localhost:3001`.
+<br/>
 
-### 2. Install & Start the Frontend
+## 🚀 Featured Project
 
-```bash
-# From the project root
-npm install
-npm run dev
-```
+<div align="center">
 
-The frontend starts on `http://localhost:3000`.
+### 🖊️ CollabBoard — Real-Time Collaboration Whiteboard
 
-### 3. Open in Browser
+*A real-time collaborative whiteboard for teams — draw, chat, and brainstorm together, live.*
 
-1. Open `http://localhost:3000`
-2. Enter your display name and create a room
-3. Share the room code with others
-4. Start collaborating!
+<a href="https://github.com/DManiSHarma/collab-whiteboard">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=DManiSHarma&repo=collab-whiteboard&theme=nord&border_color=0F3D3E&title_color=0F3D3E&icon_color=0F3D3E&text_color=ffffff&bg_color=0d1117" width="100%" style="max-width:480px;"/>
+</a>
 
-## 🏗️ Architecture
+</div>
 
-```
-Client A ←→ Socket.io Server ←→ Client B
-              ↕
-        In-Memory Store
-        (Redis-ready)
-```
+**Highlights**
 
-- **Frontend**: Next.js 14 (App Router) + Tailwind CSS + Socket.io Client
-- **Backend**: Node.js + Express + Socket.io Server
-- **State**: In-memory store (Redis-ready for production scaling)
+| Feature | Details |
+|---|---|
+| 🎨 Real-Time Drawing | Freehand pen, shapes (rectangle, circle, line, arrow), eraser — all synced live |
+| 📝 Sticky Notes | Draggable, color-coded notes with real-time text editing |
+| 💬 Live Chat | Slide-out chat panel with typing indicators and unread badges |
+| 👥 Multi-User Cursors | See other users' live cursors with name labels |
+| 🏠 Room System | Create/join rooms via shareable 6-character codes |
+| 🔍 Zoom & Pan | Infinite canvas with 25%–300% zoom and pan |
+| ↩️ Undo/Redo | Full undo/redo stack for every drawing action |
 
-## 📁 Project Structure
-
-```
-collab-whiteboard/
-├── server/                    # Backend Socket.io server
-│   ├── index.js               # Express + Socket.io setup
-│   ├── socketHandlers.js      # WebSocket event handlers
-│   ├── store.js               # In-memory room state store
-│   └── utils.js               # Helper utilities
-│
-├── src/                       # Next.js frontend
-│   ├── app/                   # App Router pages
-│   │   ├── page.js            # Landing page
-│   │   └── board/[roomId]/    # Whiteboard workspace
-│   ├── components/            # React components
-│   ├── hooks/                 # Custom React hooks
-│   ├── context/               # Board state context
-│   └── lib/                   # Constants & socket client
-```
-
-## 🔧 Tech Stack
+**Tech Layer**
 
 | Layer | Technology |
-|-------|-----------|
-| Frontend | Next.js 14, React 18, Tailwind CSS 3 |
-| Icons | Lucide React |
-| Real-time | Socket.io (WebSocket) |
-| Backend | Node.js, Express |
-| State | In-memory (Redis-ready) |
+|---|---|
+| Frontend | React, Canvas API |
+| Real-Time Sync | Socket.io |
+| Backend | Node.js, Express.js |
+| Database | MongoDB |
 
-## 📡 Socket Events
+<div align="center">
 
-| Event | Direction | Description |
-|-------|-----------|-------------|
-| `join-room` | Client → Server | Join a whiteboard room |
-| `draw-action` | Bidirectional | Drawing object created |
-| `add-note` | Bidirectional | Sticky note added |
-| `chat-message` | Bidirectional | Chat message sent |
-| `cursor-move` | Client → Server | Cursor position update |
-| `cursor-update` | Server → Client | Remote cursor broadcast |
+[![Code](https://img.shields.io/badge/Code-0F3D3E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DManiSHarma/collab-whiteboard)
 
-## 📄 License
+</div>
 
-MIT
+<br/>
 
-Copyright © 2026 DevOps Manish Sharma
+## 🛠️ Tech Stack
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+**Languages**
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+<img src="https://skillicons.dev/icons?i=js&theme=dark" />
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+**Frontend**
+
+<img src="https://skillicons.dev/icons?i=react,tailwind,vite&theme=dark" />
+
+**Backend & Real-Time**
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,socketio&theme=dark" />
+
+<br/>
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=DManiSHarma&show_icons=true&theme=nord&border_color=0F3D3E&title_color=0F3D3E&icon_color=0F3D3E&text_color=ffffff&bg_color=0d1117" width="49%" style="min-width:280px;"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DManiSHarma&layout=compact&theme=nord&border_color=0F3D3E&title_color=0F3D3E&text_color=ffffff&bg_color=0d1117" width="49%" style="min-width:280px;"/>
+
+<img src="https://streak-stats.demolab.com?user=DManiSHarma&theme=nord&border=0F3D3E&ring=0F3D3E&fire=0F3D3E&currStreakLabel=0F3D3E&background=0d1117" width="98%"/>
+
+</div>
+
+## 🏆 Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=DManiSHarma&theme=nord&no-frame=true&no-bg=true&row=1&column=7"/>
+</div>
+
+## 📈 Contribution Graph
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=DManiSHarma&theme=nord&bg_color=0d1117&color=0F3D3E&line=0F3D3E&point=ffffff" width="100%"/>
+</div>
+
+<br/>
+
+## 📫 Connect
+
+<div align="center">
+<a href="mailto:devopmanishsharma@gmail.com">
+  <img src="https://img.shields.io/badge/Email-0F3D3E?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0F3D3E&height=120&section=footer" width="100%"/>

@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* --- Base Styles --- */
+:root {
+  --board-dark: #0a0e1a;
+  --board-surface: #131829;
+  --board-accent: #6C5CE7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--board-dark);
+  color: #e2e8f0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(108, 92, 231, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 92, 231, 0.5);
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .glass {
+    background: rgba(19, 24, 41, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(42, 48, 80, 0.5);
+  }
+  .glass-light {
+    background: rgba(28, 33, 55, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(42, 48, 80, 0.3);
+  }
+}
+
+/* Canvas cursor styles */
+.cursor-crosshair { cursor: crosshair; }
+.cursor-grab { cursor: grab; }
+.cursor-grabbing { cursor: grabbing; }
+
+/* Dot grid pattern for canvas background */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(108, 92, 231, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Sticky note styles */
+.sticky-note {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.sticky-note:hover {
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
+.sticky-note.dragging {
+  transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.5));
+  z-index: 1000;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(108, 92, 231, 0.4);
+  color: #fff;
+}
+
+/* Chat bubble animation */
+.chat-bubble {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6C5CE7, #00B894);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Landing page background */
+.landing-bg {
+  background: radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(0, 184, 148, 0.1) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(225, 112, 85, 0.08) 0%, transparent 50%),
+              var(--board-dark);
+}
+
+/* Tool button active state */
+.tool-active {
+  background: rgba(108, 92, 231, 0.25);
+  box-shadow: 0 0 12px rgba(108, 92, 231, 0.3), inset 0 0 12px rgba(108, 92, 231, 0.1);
+  border-color: rgba(108, 92, 231, 0.5);
+}
